@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+
+		body{
+			overflow-x:hidden;
+		}
+		#img1{
+			position: absolute;
+			left: 10px;
+		}
+		img{
+			width: 1350px;
+			height: 500px;
+		}
+		#img2{
+			position: absolute;
+			left:1370px;
+		}
+		#img3{
+			position: absolute;
+			left:2730px;
+		}
+		#img4{
+			position: absolute;
+			left: 4090px;
+		}
+		#box1{
+			padding-top: 500px;
+		}
+		#img5{
+			position: absolute;
+			left: 5450px;
+		}
+	</style>
+	<body>
+		<div id="box">
+			<img src="img/banner_00.gif" id="img1"/>
+			<img src="img/banner_01.jpg" id="img2"/>
+			<img src="img/banner_03.jpg" id="img3"/>
+			<img src="img/banner_04.jpg" id="img4"/>
+			<img src="img/banner_05.jpg" id="img5"/>
+		</div>
+<!-- 			<img src="img/banner_05.jpg" id="img5"/> -->
+		<div id="box1">
+			<input type="button" value="上一页" onclick="lunbo()"/>
+			<input type="button" value="1" onclick="page(img1)"/>
+			<input type="button" value="2" onclick="page(img2)"/>
+			<input type="button" value="3" onclick="page(img3)"/>
+			<input type="button" value="4" onclick="page(img4)"/>
+			<input type="button" value="5" onclick="page(img5)"/>
+			<input type="button" value="下一页" onclick="lunbo1()"/>
+		</div>
+		<p>点击图片动画效果完成后再点击其他事件</p>
+		
+	</body>
+	<script src="任务二.js"></script>
+	<script>
+		var img1=document.getElementById('img1');
+		var img2=document.getElementById('img2');
+		var img3=document.getElementById('img3');
+		var img4=document.getElementById('img4');
+		var img5=document.getElementById('img5');
+		var a=0,b=0;
+		var zhuangtai=true;
+		function page(img){
+			var long=10-parseInt(getStyle(img,'left'));
+			animate(img1,{left:parseInt(getStyle(img1,'left'))+long},function(){});
+			animate(img2,{left:parseInt(getStyle(img2,'left'))+long},function(){});
+			animate(img3,{left:parseInt(getStyle(img3,'left'))+long},function(){});
+			animate(img4,{left:parseInt(getStyle(img4,'left'))+long},function(){});
+			animate(img5,{left:parseInt(getStyle(img5,'left'))+long},function(){});
+		}
+		function lunbo(){
+			console.log(getStyle(img5,'left'));
+				if(getStyle(img5,'left')=='5448px'||getStyle(img5,'left')=='5450px'){
+					a=-5440;
+				}
+				else{
+					a=1360;
+				}
+				animate(img1,{left:parseInt(getStyle(img1,'left'))+parseInt(a)},function(){});
+				animate(img2,{left:parseInt(getStyle(img2,'left'))+parseInt(a)},function(){});
+				animate(img3,{left:parseInt(getStyle(img3,'left'))+parseInt(a)},function(){});
+				animate(img4,{left:parseInt(getStyle(img4,'left'))+parseInt(a)},function(){});
+				animate(img5,{left:parseInt(getStyle(img5,'left'))+parseInt(a)},function(){});	
+		}
+		function lunbo1(){
+			console.log(getStyle(img1,'left'));
+			if(getStyle(img1,'left')=='-5430px'||getStyle(img1,'left')=='-6032px'){
+				b=5440;
+			}else{
+				b=-1360;
+			}
+			animate(img1,{left:parseInt(getStyle(img1,'left'))+parseInt(b)});
+			animate(img2,{left:parseInt(getStyle(img2,'left'))+parseInt(b)});
+			animate(img3,{left:parseInt(getStyle(img3,'left'))+parseInt(b)});
+			animate(img4,{left:parseInt(getStyle(img4,'left'))+parseInt(b)});
+			animate(img5,{left:parseInt(getStyle(img5,'left'))+parseInt(b)});
+	
+		}
+		
+	</script>
+</html>
