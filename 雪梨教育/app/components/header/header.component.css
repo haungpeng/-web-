@@ -1,0 +1,98 @@
+nav{
+    height:50px;
+    background-color: #eee;
+}
+.nav{
+    width: 1200px;
+    line-height: 50px;
+    display: block;
+    margin: 0 0 0 500px;
+}
+.nav li{
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    list-style: none;
+}
+#img{
+    display: block;
+    float: left;
+    line-height: 50px;
+    margin: 0 100px;
+}
+img{
+    vertical-align:middle;
+}
+#box{
+    margin: 0 auto;
+    width: 1200px;
+}
+#input{
+    width: 250px;
+    margin: 0 auto;
+    line-height: 50px;
+    float:left;
+}
+#input_1{
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    height: 24px;
+    cursor: pointer;
+    caret-color: #aaa;
+    padding-left: 10px;
+}
+#input_1:hover{
+    border: 1px solid rgb(204, 133, 20);
+    caret-color: #aaa;
+    padding-left: 10px;
+}
+#input_1:visited{
+    border: 1px solid rgb(204, 133, 20);
+    caret-color: #aaa;
+    padding-left: 10px;
+}
+#input_2{
+    width: 50px;
+    height: 28px;
+    background-color: rgb(228, 227, 227);
+    border: 1px solic #aaa;
+    cursor: pointer;
+}
+.nav a{
+    display: block;
+    width: 60px;
+    text-align: center;
+}
+.nav a:hover{
+    background: rgb(216, 207, 207);
+    display: block;
+    width: 60px;
+    text-align: center;
+}
+
+.infm_1 li{
+    float: left;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    width:60px;
+}
+.infm_1 li ul{
+    display: none;
+}
+.infm_1 li:hover ul{
+    display:block;
+}
+.infm_1 li:hover{
+    background: rgb(216, 207, 207);
+    display: block;
+    width: 60px;
+}
+
+.infm_1 li ul a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-bottom: 1px solid rgb(199, 191, 191);
+    background: rgb(238, 231, 231);
+}

@@ -1,0 +1,50 @@
+.nav{
+    width: 1000px;
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.left{
+    width: 200px;
+    height: 500px;
+    float: left;
+    border: 1px solid #eee;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+h5{
+    width: 200px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+}
+#span{
+    float: left;
+}
+#span span{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+#link{
+    margin-top: 40px;
+}
+#link li a{
+    width: 200px;
+    border: 1px solid #eee;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+#link li:hover{
+    background: #eee;
+}
+.right{
+    float: left;
+    width: 700px;
+    height: 1030px;
+    margin-left: 50px;
+}

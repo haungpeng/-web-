@@ -1,0 +1,22 @@
+  <div id="nav1">
+      <ul>
+        <li *ngFor="let shequ of shequ" id="li">
+          <div id="img">
+            <img src="{{shequ.images}}" id="img1">
+          </div>
+          <div id="nav">
+            <span id="span1"><a>{{shequ.courseName}}</a></span>
+            <span id="span">{{shequ.information}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="nav2">
+      <img src="../../../assets/img/img12.png">
+    </div>
+    
+  <div id="footer">
+    <ul>
+      <li *ngFor="let item of arr"><a>{{item}}</a></li>
+    </ul>
+  </div>

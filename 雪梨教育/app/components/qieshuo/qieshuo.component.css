@@ -1,0 +1,18 @@
+#top li{
+    float: left;
+    width: 100px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 50px;
+}
+#top li:hover{
+    background: rgb(243, 114, 114);
+}
+#top{
+    float: left;
+    width: 700px;
+}
+#bottom{
+    float: left;
+    
+}

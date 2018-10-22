@@ -1,0 +1,18 @@
+<div id="nav">
+  <ul>
+    <li *ngFor="let course of courses">
+      <img src="{{course.images}}">
+      <h5><a>{{course.courseName}}</a></h5>
+      <h6><a>{{course.information}}</a></h6>
+      <div id="nav1">
+        <span><a id="a1">课时{{course.task}}</a></span>
+        <span><a id="a2">人数{{course.person}}</a></span>
+      </div>
+    </li>
+  </ul>
+</div>
+<div id="footer">
+  <ul>
+    <li *ngFor="let item of arr"><a>{{item}}</a></li>
+  </ul>
+</div>

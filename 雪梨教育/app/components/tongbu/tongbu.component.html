@@ -1,0 +1,18 @@
+<div class="nav">
+  <ul>
+    <li *ngFor="let courses of tongbuke">
+      <img src="{{courses.images}}" id="img1">
+      <h3><a>{{courses.courseName}}</a></h3>
+      <div id="nav1">
+        <span><img src="../../../assets/img/图标1.png"><a>{{courses.task}}</a></span>
+        <span><img src="../../../assets/img/图标2.png"><a>{{courses.person}}</a></span>
+        <button>申请</button>
+      </div>
+    </li>
+  </ul>
+</div>
+<div id="footer">
+  <ul>
+    <li *ngFor="let item of arr"><a>{{item}}</a></li>
+  </ul>
+</div>
