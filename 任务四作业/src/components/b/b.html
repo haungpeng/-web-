@@ -1,0 +1,17 @@
+<!-- Generated template for the BComponent component -->
+<div>
+  {{text}}
+</div>
+<ion-content padding>
+  <ion-segment [(ngModel)]="icons" color="secondary">
+      <ion-segment-button value="camera">
+        <ion-icon name="camera"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="bookmark">
+        <ion-icon name="bookmark"></ion-icon>
+      </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="icons">
+      <ion-list *ngSwitchCase="'camera'">a</ion-list>
+      <ion-list *ngSwitchCase="'bookmark'">b</ion-list>
+  </div>
